@@ -6,8 +6,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings:"slnt" 0;
 }
 
 @import url('https://fonts.cdnfonts.com/css/miama');
@@ -26,21 +25,38 @@
 .display-flex{
     display: flex;
 }
+
 .btn-primary{
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
     border-radius: 42px;
-    padding: 8px 20px;
+    padding: 16px 40px;
     font-size: 1rem;
     border: none;
 }
 
 /* header style  */
 
+header{
+    height: 715px;
+    background: linear-gradient(to bottom, #121212, #222222, #000000);
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .brand{
     font-size: 2.25rem;
     font-style: italic;
     font-weight: 800;
+}
+.btn-home{
+    background-color: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: none;
 }
 .nav-item{
     list-style: none;
@@ -61,14 +77,108 @@
     width: 465px;
     padding: 4px;
 }
-.navbar{
+.navbar,.banner{
     justify-content: space-between;
     align-items: center;
-    max-width: 1060px;
+    max-width: 73%;
     margin: 0 auto;
+}
+
+/* Banner style  */
+
+.banner{
+    margin: 0 auto;
+    gap: 167px;
+}
+
+.banner-title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 120%;
 }
 
 
 #shape{
     font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 400;
+    
 }
+
+.btn-app{
+    background-color: black;
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    border: 1px solid white;
+    margin-left: 14px;
+}
+.btn-primary{
+    background-color: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    border: none;
+}
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(230, 83, 60, 1);
+}
+.video{
+    padding: 20px 23px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    border: none;
+    position: relative;
+    transform: translate(-80px,-290px);
+}
+#number{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#description{
+     font-size: 1rem;
+     color: rgba(239, 237, 232, 0.65);
+     opacity: 65%;
+}
+.badge{
+    text-align: left;
+    padding-left: 12px;
+}
+.free{
+    padding: 20px 23px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    border: none;
+    position: relative;
+    transform: translate(280px, -565px);
+}
+#number-top{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#description2{
+    font-size: 0.8rem;
+     color: rgba(239, 237, 232, 0.65);
+     opacity: 65%;
+}
+.banner-image{
+    width: 100%;
+}
+.banner-leftside{
+    width: 50%;
+    flex-direction: column;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
