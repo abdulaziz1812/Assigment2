@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-.inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:"slnt" 0;
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 @import url('https://fonts.cdnfonts.com/css/miama');
-      
+
 
 /* shared style */
-.bg-color{
+.bg-color {
     background-color: black;
 }
-.red{
+
+.red {
     color: rgba(230, 83, 60, 1);
 }
-.white{
+
+.white {
     color: white;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
     border-radius: 42px;
@@ -37,20 +40,27 @@
 
 /* header style  */
 
-header{
-    height: 715px;
+header {
     background: linear-gradient(to bottom, #121212, #222222, #000000);
+    background-size: cover;
 }
-body{
-    max-width: 1440px;
+
+body {
+    max-width: 1920px;
     margin: 0 auto;
 }
-.brand{
+
+.brand {
     font-size: 2.25rem;
     font-style: italic;
     font-weight: 800;
 }
-.btn-home{
+
+.bar-icon {
+    display: none;
+}
+
+.btn-home {
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
     border-radius: 42px;
@@ -58,40 +68,46 @@ body{
     font-size: 1rem;
     border: none;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
-    
+
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-weight: 400;
     font-size: 1rem;
     margin-right: 24px;
 }
 
-.nav-links{
+.nav-links {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 39px;    
+    border-radius: 39px;
     align-items: center;
     justify-content: space-between;
     width: 465px;
     padding: 4px;
 }
-.navbar,.banner{
+
+.navbar {
     justify-content: space-between;
     align-items: center;
-    max-width: 73%;
+    width: 73%;
     margin: 0 auto;
 }
 
 /* Banner style  */
 
-.banner{
+.banner {
     margin: 0 auto;
     gap: 167px;
+    align-items: center;
+    width: 73%;
+    margin: 0 auto;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4.8rem;
     font-weight: 900;
     margin: 0;
@@ -99,14 +115,18 @@ body{
 }
 
 
-#shape{
+#shape {
     font-family: 'Miama', sans-serif;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 400;
-    
+
 }
 
-.btn-app{
+.button {
+    flex-direction: row;
+}
+
+.btn-app {
     background-color: black;
     font-weight: 600;
     border-radius: 42px;
@@ -115,7 +135,8 @@ body{
     border: 1px solid white;
     margin-left: 14px;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
     border-radius: 42px;
@@ -123,62 +144,302 @@ body{
     font-size: 1rem;
     border: none;
 }
-.ball{
+
+.ball {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     background-color: rgba(230, 83, 60, 1);
+    margin: auto 0;
+
+
 }
-.video{
+
+.video {
+    position: absolute;
     padding: 20px 23px;
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    border: none;
-    position: relative;
-    transform: translate(-80px,-290px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    right: 500px;
+    top: 556px;
 }
-#number{
+
+#number {
     font-size: 1.5rem;
     font-weight: 900;
 }
-#description{
-     font-size: 1rem;
-     color: rgba(239, 237, 232, 0.65);
-     opacity: 65%;
+
+#description {
+    font-size: 1rem;
+    color: rgba(239, 237, 232, 0.65);
+    opacity: 65%;
 }
-.badge{
+
+.badge {
     text-align: left;
     padding-left: 12px;
 }
-.free{
-    padding: 20px 23px;
+
+.free {
+    position: absolute;
+    padding: 8px 24px;
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    border: none;
-    position: relative;
-    transform: translate(280px, -565px);
+    right: 185px;
+    top: 256px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 193px;
+    height: 98px;
 }
-#number-top{
+
+#number-top {
     font-size: 2.5rem;
     font-weight: 900;
+    margin: 0;
 }
-#description2{
+
+#description2 {
     font-size: 0.8rem;
-     color: rgba(239, 237, 232, 0.65);
-     opacity: 65%;
+    color: rgba(239, 237, 232, 0.65);
+    opacity: 65%;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
-.banner-leftside{
+
+.banner-leftside {
     width: 50%;
     flex-direction: column;
 }
-.banner-description{
+
+/* .banner-rightside{
+    flex-direction: column;
+} */
+
+.banner-description {
     font-size: 1rem;
     font-weight: 400;
     opacity: 50%;
 }
 
+/* Habits style  */
+
+.title-center {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.description-p {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+    text-align: center;
+}
+
+.card-image {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+}
+
+.habits {
+    width: 73%;
+    margin: 0 auto;
+}
+
+.habits-container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.card-container {
+    justify-content: center;
+}
+
+.card-name {
+    text-align: center;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+}
+/* run style */
+.run {
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18PX;
+    width: 80%;
+    height: 371px;
+    margin: 0 auto;
+}
+
+.left-side-run {
+    width: 443px;
+    height: 290px;
+    margin-left: 54px;
+}
+
+.run-image{
+    width: 366px;
+height: 312px;
+border-radius: 18px;
+margin-right: 32px;
+}
+
+.description-pl {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .bar-icon {
+        display: block;
+    }
+
+    .banner-title {
+        font-size: 2.25rem;
+        margin-right: 140px;
+    }
+
+    .banner-description {
+        margin-right: 160px;
+        line-height: 24px;
+    }
+
+    .button {
+        gap: 20px;
+    }
+
+    .banner,
+    .habits {
+        flex-direction: column;
+        margin: auto 20px;
+        width: 100%;
+        gap: 0;
+    }
+
+    .banner-leftside {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 58px;
+    }
+
+    #shape {
+        font-size: 4rem;
+    }
+
+    .btn-app {
+        margin: 0;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: auto 20px;
+    }
+
+    .video {
+        width: 155px;
+        height: 72px;
+        left: 65px;
+        top: 775px;
+        padding: 15px 17px;
+    }
+
+    .banner-image {
+        margin-top: 55px;
+    }
+
+    .free {
+        left: 250px;
+        top: 555px;
+        padding: 11px 18px;
+        width: 145px;
+        height: 74px;
+
+    }
+
+    #number-top {
+        font-size: 1.8rem;
+    }
+
+    #description2 {
+        font-size: 0.6rem;
+    }
+
+    .ball {
+        height: 30px;
+        width: 30px;
+    }
+
+    #number {
+        font-size: 1.2rem;
+    }
+
+    #description {
+        font-size: 0.75rem;
+    }
+
+    .title-center {
+        font-size: 2rem;
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
+    .habits-container {
+        width: 100%;
+    }
+
+    .card-name {
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+
+    .description-p {
+        margin: 0;
+        font-size: 0.75rem;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+
+    .card {
+        padding: 0;
+        width: 231px;
+        height: 274px;
+    }
+}
