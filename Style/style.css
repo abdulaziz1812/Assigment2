@@ -136,15 +136,6 @@ body {
     margin-left: 14px;
 }
 
-.btn-primary {
-    background-color: rgba(230, 83, 60, 1);
-    font-weight: 600;
-    border-radius: 42px;
-    padding: 16px 40px;
-    font-size: 1rem;
-    border: none;
-}
-
 .ball {
     height: 40px;
     width: 40px;
@@ -216,11 +207,6 @@ body {
     width: 50%;
     flex-direction: column;
 }
-
-/* .banner-rightside{
-    flex-direction: column;
-} */
-
 .banner-description {
     font-size: 1rem;
     font-weight: 400;
@@ -276,6 +262,7 @@ body {
     height: 400px;
     padding: 30px;
 }
+
 /* run style */
 .run {
     justify-content: space-between;
@@ -283,8 +270,16 @@ body {
     background-color: rgb(34, 34, 34);
     border-radius: 18PX;
     width: 80%;
-    height: 371px;
     margin: 0 auto;
+}
+
+.btn-primary-join {
+    background-color: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    border: none;
 }
 
 .left-side-run {
@@ -293,11 +288,11 @@ body {
     margin-left: 54px;
 }
 
-.run-image{
+.run-image {
     width: 366px;
-height: 312px;
-border-radius: 18px;
-margin-right: 32px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 30px;
 }
 
 .description-pl {
@@ -305,12 +300,31 @@ margin-right: 32px;
     font-weight: 400;
     opacity: 50%;
 }
-.title{
+
+.title {
     font-size: 3rem;
     font-weight: 900;
     margin: 0;
 }
+/* BMI style */
 
+.bmi-container{
+    width: 47%;
+    margin: 88px auto;
+}
+.bmi-bg{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: rgb(34, 34, 34);
+}
+.bmi-cal{
+    width: 73%;
+    margin: 0 auto;
+    margin-bottom: 88px;
+    justify-content: space-between;
+    gap: 175px;
+    align-items: center;
+}
 .none {
     display: none;
 }
@@ -442,4 +456,32 @@ margin-right: 32px;
         width: 231px;
         height: 274px;
     }
+
+    .run {
+        flex-direction: column;
+        /* height: 531px; */
+        align-items: center;
+        margin: 66px 20px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .run-image {
+        content: url(/images/run.jpg);
+        margin: 35px 33px;
+        height: auto;
+    }
+
+    .left-side-run {
+        padding: 33px 31px 0 31px;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .btn-primary-join {
+        width: 100%;
+    }
+
 }
