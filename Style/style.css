@@ -11,7 +11,10 @@
 
 @import url('https://fonts.cdnfonts.com/css/miama');
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* shared style */
 .bg-color {
     background-color: black;
@@ -37,6 +40,16 @@
     font-size: 1rem;
     border: none;
     font-family: "Inter", sans-serif;
+}
+.btn-primary-small-scr{
+    background-color: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    border-radius: 42px;
+    padding: 16px 46px;
+    font-size: 1rem;
+    border: none;
+    font-family: "Inter", sans-serif;
+    display: none;
 }
 
 /* header style  */
@@ -137,6 +150,9 @@ body {
     border: 1px solid white;
     margin-left: 14px;
     font-family: "Inter", sans-serif;
+}
+.banner-rightside {
+    position: relative;
 }
 
 .ball {
@@ -304,9 +320,10 @@ body {
 }
 
 .description-pl {
-    font-size: 1rem;
+    font-size: 0.87rem;
     font-weight: 400;
     opacity: 50%;
+    line-height: 24px;
 }
 
 .title {
@@ -378,6 +395,9 @@ td {
     width: 48%;
     padding: 13px 14px ;
 }
+#activity{
+    width: 98%;
+}
 #height, #age{
     margin-right: 8px;
 }
@@ -399,6 +419,103 @@ td {
     font-family: "Inter", sans-serif;
     margin: 34px 0 52px 0;
 }
+
+/* team style */
+.team-details{
+    width: 47%;
+    margin: 0 auto;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 18px;
+background: rgba(255, 255, 255, 0.1);
+padding: 20px;
+}
+.team-card img{
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(90%);
+}
+.team-card{
+    position: relative;
+}
+.trainer{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.name{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.position{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+/* footer style  */
+.footer{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 88px;
+}
+.footer-w{
+    width: 73%;
+    margin: 0 auto;
+}
+.brand-footer{
+    font-size: 4.37rem;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+}
+.left-side-footer{
+    width: 30%;
+}
+.right-side-footer{
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 152px;
+}
+.title-footer{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.list{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    margin-top: 39px;
+}
+.footer-details{
+    justify-content: space-between;
+    padding: 66px 0;
+}
+hr {
+    border-color:  rgba(255, 255, 255, 0.1);
+}
+.rights{
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 35px 0;
+}
+
+
+
 .none {
     display: none;
 }
@@ -425,7 +542,13 @@ td {
     .button {
         gap: 20px;
     }
-
+    .btn-primary-small-scr{
+        display: block;
+        padding: 16px 60px;
+    }
+    .btn-primary {
+        display: none;
+    }
     .banner,
     .habits {
         flex-direction: column;
@@ -452,13 +575,20 @@ td {
 
     .btn-app {
         margin: 0;
+        padding: 16px 40px;
+    }
+    .btn-primary{
+        padding: 16px 40px;
     }
 
     .navbar {
         width: 100%;
         margin: auto 20px;
     }
-
+    .button {
+        gap: 14px;
+        
+    }
     .video {
         width: 155px;
         height: 72px;
@@ -535,7 +665,7 @@ td {
         flex-direction: column;
         /* height: 531px; */
         align-items: center;
-        margin: 66px 20px;
+        margin: 66px 20px 0 20px;
         width: 100%;
         height: auto;
 
@@ -556,6 +686,35 @@ td {
 
     .btn-primary-join {
         width: 100%;
+    }
+    .bmi-container{
+        width: 100%;
+        margin: 32px 20px;
+    }
+    .bmi-cal{
+        flex-direction: column;
+        width: 100%;
+        margin: auto 20px;
+        gap: 0;
+    }
+    .left-side-bmi{
+        margin-top: 34px;
+    }
+    .bmi-form{
+        width: 100%;
+    }
+    .row input{
+        width: 38.5%;
+        margin: 0;
+    }
+    .row select{
+        width: 47.5%;
+    }
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .small-scr{
+        display: none;
     }
 
 }
