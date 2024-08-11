@@ -112,6 +112,7 @@ body {
     align-items: center;
     width: 73%;
     margin: 0 auto;
+    padding: 53px 0 30px 0;
 }
 
 /* Banner style  */
@@ -139,6 +140,7 @@ body {
 }
 
 .button {
+    margin-top: 28px;
     flex-direction: row;
 }
 
@@ -250,6 +252,7 @@ body {
     font-weight: 400;
     opacity: 50%;
     text-align: center;
+    letter-spacing: 0.3px;
 }
 
 .card-image {
@@ -260,13 +263,14 @@ body {
 }
 
 .habits {
-    width: 73%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .habits-container {
     width: 65%;
     margin: 0 auto;
+    padding: 100px 0 0 0 ;
 }
 
 .card-container {
@@ -293,7 +297,7 @@ body {
     align-items: center;
     background-color: rgb(34, 34, 34);
     border-radius: 18PX;
-    width: 80%;
+    width: 74%;
     margin: 0 auto;
 }
 
@@ -305,10 +309,11 @@ body {
     font-size: 1rem;
     border: none;
     font-family: "Inter", sans-serif;
+    margin-top: 34px;
 }
 
 .left-side-run {
-    width: 443px;
+    width: 40%;
     height: 290px;
     margin-left: 54px;
 }
@@ -329,6 +334,8 @@ body {
     font-weight: 400;
     opacity: 50%;
     line-height: 24px;
+    letter-spacing: 0.3px;
+    
 }
 
 .title {
@@ -342,6 +349,11 @@ body {
 .bmi-container {
     width: 47%;
     margin: 88px auto;
+}
+.title-bmi {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
 }
 
 .bmi-bg {
@@ -442,7 +454,7 @@ td {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 80%;
+    width: 73%;
     margin: 58px auto;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
@@ -451,7 +463,7 @@ td {
 
 .team-card img {
     width: 100%;
-    height: 272px;
+    height: 290px;
     object-fit: cover;
     border-radius: 18px;
     filter: brightness(90%);
@@ -479,12 +491,12 @@ td {
 }
 /* price style  */
 .price{
-    width: 75%;
+    width: 73%;
     margin: 0 auto;
     background-color:rgba(255, 255, 255, 0.1); ;
     border-radius: 18px;
     margin-bottom: 66px;
-    padding: 60px;
+    padding: 20px;
 }
 
 .plan-card{
@@ -496,7 +508,7 @@ td {
     background-color:rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 18px;
-    width: 25%;
+    width: 27%;
 }
 .list-plan{
     margin-top: 33px;
@@ -608,8 +620,11 @@ hr {
     }
 
     .button {
-        gap: 20px;
+        gap: 14px;
+      
+
     }
+
 
     .btn-primary-small-scr {
         display: block;
@@ -618,6 +633,10 @@ hr {
 
     .btn-primary {
         display: none;
+    }
+    .btn-app {
+        margin: 0;
+        padding: 16px 30px;
     }
 
     .banner {
@@ -634,7 +653,7 @@ hr {
         flex-direction: column;
     }
     .habits{
-        width: 100%;
+        width: auto;
         padding: 0 28px;
         margin: 0;
     }
@@ -650,29 +669,20 @@ hr {
         font-size: 4rem;
     }
 
-    .btn-app {
-        margin: 0;
-        padding: 16px 40px;
-    }
+   
 
     .btn-primary {
         padding: 16px 40px;
     }
 
     .navbar {
-        width: 100%;
+        width: auto;
         margin: 0;
         padding: 51px 20px;
     }
 
-    .button {
-        gap: 14px;
-
-    }
-
+    
     .video {
-        /* width: 155px;
-        height: 72px; */
         top: 51%;
         left: 2%;
         padding: 15px 17px;
@@ -716,7 +726,8 @@ hr {
     }
 
     .habits-container {
-        width: 100%;
+        width: auto;
+        padding: 0;
     }
 
     .card-name {
@@ -747,10 +758,10 @@ hr {
     }
 
     .run-image {
-        content: url(/images/run.jpg);
         height: auto;
         width: 100%;
         margin: 0;
+        object-fit: cover;
     }
     .right-side-run{
         padding: 0 33px 33px 33px;
@@ -761,22 +772,24 @@ hr {
         width: auto;
         height: auto;
     }
-
+    .left-side-run h3{
+        font-size: 2rem;
+    }
     .btn-primary-join {
         width: 100%;
         margin-top: 24px;
     }
 
     .bmi-container {
-        width: 100%;
+        width: auto;
         margin: 32px 0 32px 0;
         padding: 0 20px; 
     }
 
     .bmi-cal {
         flex-direction: column;
-        width: 100%;
-        margin: auto 20px;
+        width: auto;
+        padding: 0 20px;
         gap: 0;
     }
 
@@ -796,7 +809,10 @@ hr {
     .row select {
         width: 47.5%;
     }
-
+    .team-details{
+        width: auto;
+        padding: 0 20PX;
+    }
     .team-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -813,8 +829,8 @@ hr {
         width: 80%;
     }
     .price{
-        padding: 5%;
-        width: 90%;
+        padding: 20px;
+        width: auto;
     }
 
     .footer-details {
@@ -822,7 +838,7 @@ hr {
     }
 
     .footer-w {
-        width: 100%;
+        width: auto;
         margin: auto 20px;
     }
 
@@ -835,8 +851,14 @@ hr {
         margin-top: 30px;
         gap: 20px;
     }
-body{
-    overflow-x: hidden;
-}
+    .rights{
+        text-align: left;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
 
 }
