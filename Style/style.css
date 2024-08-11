@@ -11,10 +11,11 @@
 
 @import url('https://fonts.cdnfonts.com/css/miama');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* shared style */
 .bg-color {
     background-color: black;
@@ -41,7 +42,8 @@
     border: none;
     font-family: "Inter", sans-serif;
 }
-.btn-primary-small-scr{
+
+.btn-primary-small-scr {
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
     border-radius: 42px;
@@ -119,7 +121,6 @@ body {
     gap: 167px;
     align-items: center;
     width: 73%;
-    margin: 0 auto;
 }
 
 .banner-title {
@@ -151,6 +152,7 @@ body {
     margin-left: 14px;
     font-family: "Inter", sans-serif;
 }
+
 .banner-rightside {
     position: relative;
 }
@@ -172,8 +174,8 @@ body {
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    right: 500px;
-    top: 556px;
+    left: -32%;
+    top: 73%;
     font-family: "Inter", sans-serif;
 }
 
@@ -195,18 +197,16 @@ body {
 
 .free {
     position: absolute;
-    padding: 8px 24px;
+    padding: 16px 24px;
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    right: 185px;
-    top: 256px;
+    right: -16%;
+    top: 22%;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 193px;
-    height: 98px;
     font-family: "Inter", sans-serif;
-    
+
 }
 
 #number-top {
@@ -270,20 +270,21 @@ body {
 }
 
 .card-container {
-    justify-content: center;
+    justify-content: space-between;
+    margin: 58px 0 100px 0;
+    
 }
 
 .card-name {
     text-align: center;
+    margin-top: 30px;
 }
 
 .card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 400px;
-    padding: 30px;
+    width: 20%;
 }
 
 /* run style */
@@ -312,11 +313,15 @@ body {
     margin-left: 54px;
 }
 
+
 .run-image {
     width: 366px;
     height: 312px;
     border-radius: 18px;
     margin: 30px;
+    object-fit: none;
+    object-position: 65% 28%;
+    
 }
 
 .description-pl {
@@ -360,6 +365,7 @@ table {
 
 th {
     font-weight: 500;
+    text-align: left;
 }
 
 td {
@@ -372,42 +378,48 @@ td {
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 15px 18px;
 }
-.left-side-bmi{
+
+.left-side-bmi {
     margin-top: 52px;
 }
+
 .bmi-form {
     width: 577px;
     margin-top: 52px;
 }
-.form{
+
+.form-container {
     margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    
+    
 }
-.row input,
-.row select {
+
+.form-field input, select{
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    padding: 13px 20px;
-    width: 41%;
-    font-family: "Inter", sans-serif;
-}
-.row select{
-    width: 48%;
-    padding: 13px 14px ;
-}
-#activity{
-    width: 98%;
-}
-#height, #age{
-    margin-right: 8px;
-}
-.row input::placeholder,
-.row select {
     color: rgba(255, 255, 255, 0.6);
+    border: none;
+    width: 100%;
     font-family: "Inter", sans-serif;
+    padding: 13px 20px;
+    box-sizing: border-box;
 }
-.row{
-    margin-bottom: 12px;
+
+.form-field input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+.form-activity {
+    grid-column: span 2;
+    width: 100%;
+}
+.form-field select option,
+.form-activity select option {
+    background-color: gray;
+        color: lightgray;        
 }
 .btn-primary-cal {
     background-color: rgba(230, 83, 60, 1);
@@ -421,74 +433,121 @@ td {
 }
 
 /* team style */
-.team-details{
+.team-details {
     width: 47%;
     margin: 0 auto;
 }
-.team-container{
+
+.team-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 80%;
-    margin: 0 auto;
+    margin: 58px auto;
     border-radius: 18px;
-background: rgba(255, 255, 255, 0.1);
-padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
 }
-.team-card img{
+
+.team-card img {
     width: 100%;
     height: 272px;
     object-fit: cover;
     border-radius: 18px;
     filter: brightness(90%);
 }
-.team-card{
+
+.team-card {
     position: relative;
 }
-.trainer{
+
+.trainer {
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
-.name{
+
+.name {
     font-size: 1.2rem;
     margin: 0;
 }
-.position{
+
+.position {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.5);
     margin: 0;
 }
+/* price style  */
+.price{
+    width: 75%;
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.1); ;
+    border-radius: 18px;
+    margin-bottom: 66px;
+    padding: 60px;
+}
+
+.plan-card{
+    justify-content: space-between;
+    
+}
+.card-price{
+    margin-top: 33px;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+    width: 25%;
+}
+.list-plan{
+    margin-top: 33px;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 33px;
+}
+.price-month{
+    font-size: 1.2rem;
+    margin-bottom: 33px;
+}
+.month{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 /* footer style  */
-.footer{
+.footer {
     background: rgba(255, 255, 255, 0.1);
     margin-top: 88px;
 }
-.footer-w{
+
+.footer-w {
     width: 73%;
     margin: 0 auto;
 }
-.brand-footer{
+
+.brand-footer {
     font-size: 4.37rem;
     font-style: italic;
     font-weight: 800;
     margin: 0;
 }
-.left-side-footer{
+
+.left-side-footer {
     width: 30%;
 }
-.right-side-footer{
+
+.right-side-footer {
     justify-content: space-between;
     /* align-items: center; */
     gap: 152px;
 }
-.title-footer{
+
+.title-footer {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
 }
-.list{
+
+.list {
     text-decoration: none;
     font-weight: 400;
     font-size: 1rem;
@@ -500,14 +559,17 @@ padding: 20px;
     padding: 0;
     margin-top: 39px;
 }
-.footer-details{
+
+.footer-details {
     justify-content: space-between;
     padding: 66px 0;
 }
+
 hr {
-    border-color:  rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
 }
-.rights{
+
+.rights {
     text-align: center;
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.5);
@@ -521,6 +583,10 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        width: 100%;
+    }
+
     .nav-links {
         display: none;
     }
@@ -531,35 +597,46 @@ hr {
 
     .banner-title {
         font-size: 2.25rem;
-        margin-right: 140px;
+        width: 65%;
+        margin-bottom: 28px;
     }
 
     .banner-description {
-        margin-right: 160px;
+        width: 70%;
         line-height: 24px;
+        margin-bottom: 28px;
     }
 
     .button {
         gap: 20px;
     }
-    .btn-primary-small-scr{
+
+    .btn-primary-small-scr {
         display: block;
         padding: 16px 60px;
     }
+
     .btn-primary {
         display: none;
     }
-    .banner,
-    .habits {
+
+    .banner {
         flex-direction: column;
-        margin: auto 20px;
+        margin: auto 0;
+        max-width: 100%;
         width: 100%;
         gap: 0;
+        padding: 0 20px;
     }
 
     .banner-leftside {
         width: 100%;
         flex-direction: column;
+    }
+    .habits{
+        width: 100%;
+        padding: 0 28px;
+        margin: 0;
     }
 
     .card-container {
@@ -577,23 +654,27 @@ hr {
         margin: 0;
         padding: 16px 40px;
     }
-    .btn-primary{
+
+    .btn-primary {
         padding: 16px 40px;
     }
 
     .navbar {
         width: 100%;
-        margin: auto 20px;
+        margin: 0;
+        padding: 51px 20px;
     }
+
     .button {
         gap: 14px;
-        
+
     }
+
     .video {
-        width: 155px;
-        height: 72px;
-        left: 65px;
-        top: 775px;
+        /* width: 155px;
+        height: 72px; */
+        top: 51%;
+        left: 2%;
         padding: 15px 17px;
     }
 
@@ -602,12 +683,9 @@ hr {
     }
 
     .free {
-        left: 250px;
-        top: 555px;
-        padding: 11px 18px;
-        width: 145px;
-        height: 74px;
-
+        right: 5%;
+        padding: 11px 22px;
+        top: 18%;
     }
 
     #number-top {
@@ -663,22 +741,22 @@ hr {
 
     .run {
         flex-direction: column;
-        /* height: 531px; */
+        margin-top: 66px;
         align-items: center;
-        margin: 66px 20px 0 20px;
-        width: 100%;
-        height: auto;
-
+        width: 90%;
     }
 
     .run-image {
         content: url(/images/run.jpg);
-        margin: 35px 33px;
         height: auto;
+        width: 100%;
+        margin: 0;
     }
-
+    .right-side-run{
+        padding: 0 33px 33px 33px;
+    }
     .left-side-run {
-        padding: 33px 31px 0 31px;
+        padding: 33px;
         margin: 0;
         width: auto;
         height: auto;
@@ -686,35 +764,79 @@ hr {
 
     .btn-primary-join {
         width: 100%;
+        margin-top: 24px;
     }
-    .bmi-container{
+
+    .bmi-container {
         width: 100%;
-        margin: 32px 20px;
+        margin: 32px 0 32px 0;
+        padding: 0 20px; 
     }
-    .bmi-cal{
+
+    .bmi-cal {
         flex-direction: column;
         width: 100%;
         margin: auto 20px;
         gap: 0;
     }
-    .left-side-bmi{
+
+    .left-side-bmi {
         margin-top: 34px;
     }
-    .bmi-form{
+
+    .bmi-form {
         width: 100%;
     }
-    .row input{
+
+    .row input {
         width: 38.5%;
         margin: 0;
     }
-    .row select{
+
+    .row select {
         width: 47.5%;
     }
-    .team-container{
+
+    .team-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .small-scr{
+
+    .small-scr {
         display: none;
     }
+    .plan-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-price{
+        width: 80%;
+    }
+    .price{
+        padding: 5%;
+        width: 90%;
+    }
+
+    .footer-details {
+        flex-direction: column;
+    }
+
+    .footer-w {
+        width: 100%;
+        margin: auto 20px;
+    }
+
+    .left-side-footer {
+        width: 100%;
+    }
+
+    .right-side-footer {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 20px;
+    }
+body{
+    overflow-x: hidden;
+}
 
 }

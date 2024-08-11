@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment2</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
     <script src="https://kit.fontawesome.com/811f7273d4.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/811f7273d4.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -44,7 +44,7 @@
                     <button class="btn-app white">Download App</button>
                 </div>
             </div>
-            <div class="banner-rightside">
+            <div class="banner-rightside display-flex">
                 <img class="banner-image" src="images/Images 2.png" alt="man workout">
                 <button class="free white"><span id="number-top">500+</span> <br>
                     <span id="description2">Free Workout Videos</span></button>
@@ -105,7 +105,7 @@
                 <button class="btn-primary-join white">Join Now</button>
             </div>
             <div class="right-side-run">
-                <img class="run-image" src="images/runc.jpg" alt="run">
+                <img class="run-image" src="images/run.jpg" alt="run">
             </div>
         </section>
 
@@ -153,24 +153,34 @@
                         <h2>Calculate your BMI</h2>
                         <p class="description-pl">We believe fitness should be available to everyone, everywhere, no
                             matter their income or access to a gym.</p>
-                        <div class="form">
-                            <div class="row">
+                        <div class="form-container">
+                            <div class="form-field">
                                 <input type="text" name="" id="height" placeholder="Height/cm">
+                            </div>
+                            <div class="form-field">
                                 <input type="text" name="" id="weight" placeholder="Weight/kg">
                             </div>
-                            <div class="row">
+                            <div class="form-field">
                                 <input type="text" name="" id="age" placeholder="Age">
+                            </div>
+                            <div class="form-field">
                                 <select name="" id="sex">
                                     <option value="">Sex</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
                                 </select>
                             </div>
-                            <div class="row">
+                            <div class="form-activity">
                                 <select name="" id="activity">
                                     <option value="">Select an activity factor</option>
+                                    <option value="">Lightly Active</option>
+                                    <option value="">Moderately Active</option>
+                                    <option value="">Very Active</option>
                                 </select>
                             </div>
-                            <button class="btn-primary-cal white">Calculate</button>
+
                         </div>
+                        <button class="btn-primary-cal white">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -226,6 +236,53 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Pricing Package stats -->
+        <section class="price">
+            <div class="price-details">
+                <h2 class="title-center white">Choose Pricing Package</h2>
+                <p class="description-p white">Choose the plan that best meets your needs and fitness goals</p>
+                <div class="plan-card display-flex">
+                    <div class="card-price">
+                        <h2 class="white">Basic</h2>
+                        <p class="description-pl white">Features:</p>
+                        <ul class="list-plan white">
+                            <li>&#10004; Non-peak gym access</li>
+                            <li>&#10004; Cardio & strength equipment</li>
+                            <li>&#10004; Locker room access</li>
+                            <li>&#10004; 1 fitness assessment</li>
+                        </ul>
+                        <h2 class="price-month white">Price: 500 BDT <span class="month">/Month</span></h2>
+                        <button class="btn-primary-join white">Join Now!</button>
+                    </div>
+                    <div class="card-price">
+                        <h2 class="white">Starter</h2>
+                        <p class="description-pl white">Features:</p>
+                        <ul class="list-plan white">
+                            <li>&#10004; All-hours gym access</li>
+                            <li>&#10004; Full equipment use</li>
+                            <li>&#10004; Group classes access</li>
+                            <li>&#10004; 1 personal training session/month</li>
+                        </ul>
+                        <h2 class="price-month white">Price: 800 BDT <span class="month">/Month</span></h2>
+                        <button class="btn-primary-join white">Join Now!</button>
+                    </div>
+                    <div class="card-price">
+                        <h2 class="white">Premium</h2>
+                        <p class="description-pl white">Features:</p>
+                        <ul class="list-plan white">
+                            <li>&#10004; 24/7 gym access</li>
+                            <li>&#10004; Unlimited classes & equipment use</li>
+                            <li>&#10004; Premium locker room amenities</li>
+                            <li>&#10004; 4 personal training sessions/month</li>
+                        </ul>
+                        <h2 class="price-month white">Price: 800 BDT <span class="month">/Month</span></h2>
+                        <button class="btn-primary-join white">Join Now!</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer class="footer">
